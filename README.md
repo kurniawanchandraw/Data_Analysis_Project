@@ -2,21 +2,28 @@
 
 ## Setup Environment - Anaconda
 ```
-conda create --name main-ds python=3.9
-conda activate main-ds
+conda create --name ecom-dashboard python=3.9
+conda activate ecom-dashboard
 pip install -r requirements.txt
 ```
 
-## Setup Environment - Shell/Terminal
+## Setup Environment - Virtual Environment (venv)
 ```
-mkdir proyek_analisis_data
-cd proyek_analisis_data
+python -m venv env
+source env/bin/activate
+env\Scripts\activate
+pip install -r requirements.txt
+```
+
+## Setup Environment - Pipenv (Alternatif)
+```
+mkdir ecommerce_dashboard
+cd ecommerce_dashboard
 pipenv install
 pipenv shell
 pip install -r requirements.txt
 ```
 
-## Run steamlit app
+## Jalankan Aplikasi Streamlit
 ```
-streamlit run dashboard.py
-```
+streamlit run dashboard/dashboard.py
